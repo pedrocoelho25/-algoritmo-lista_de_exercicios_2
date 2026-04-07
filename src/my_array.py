@@ -18,13 +18,13 @@ class MyArray(Array):
         return self.data[index]
 
     def set(self, index: int, value: int) -> None:
-        return self.data[index] = value
+        self.data[index] = value
 
     def remove(self, value: int) -> None:
-        return self.data.remove(value)
+         self.data.remove(value)
 
     def insert(self, index: int, value: int) -> None:
-        return self.data.insert(index,value)
+        self.data.insert(index,value)
 
     def __len__(self) -> int:
         return len(self.data)
